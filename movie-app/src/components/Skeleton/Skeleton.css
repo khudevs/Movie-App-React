@@ -1,0 +1,62 @@
+.skeleton{
+    background: #eee;
+    margin:12px 0px;
+    bordedr-radius:4px;
+}
+.skeleton.text{
+    width: 100%;
+    height: 12px;
+}
+.skeleton.title{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 24px;
+}
+.skeleton.image{
+    width: 100%;
+    height: 480px;
+}
+.skeleton.poster{
+    width: 100%;
+    height: 480px;
+}
+.skeleton-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton-left, .skeleton-right{
+    width: 100%;
+}
+.skeleton-left{
+    width: 30% !important;
+}
+.skeleton-right{
+    margin-left: 12px;
+}
+
+.skeleton-movies {
+    padding:32px;
+}
+.shimmer-wrapper{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    animation: loading 0.5s infinite; 
+    box-shadow: 0px 0px 30px 30px rgb(255,255,255,0.05);
+}
+
+.shimmer{
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.432);
+    transform: skewX(-20deg);
+}
+
+@keyframes loading {
+    0% {transform: translateX(-150%)}
+    50% {transform: translateX(-60%)}
+    100% {transform: translateX(150%)}
+}

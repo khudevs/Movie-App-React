@@ -1,0 +1,425 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar{
+  background: #191919 !important;
+  padding:16px;
+}
+.navbar .nav-link{
+  text-align: right;
+}
+.navbar a{
+  color:#fff !important;
+}
+
+.navbar .navbar-brand{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.movies{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px;
+  grid-gap: 48px;
+}
+
+.movie{
+  padding:24px;
+  border:1px solid#eee ;
+  border-radius: 4px;
+  transition: 300ms all;
+  text-decoration: none !important;
+}
+.movie:hover{
+  box-shadow: -6px 6px 6px rgb(214, 214, 214);
+  border-radius: 8px;
+  border:1px solid #eee;
+}
+
+.movie .movie-poster{
+  width: 320px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.movie .movie-title{
+  font-size: 20px;
+  margin-bottom: 12px;
+  color:#222222;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.movie .movie-overview{
+  margin-top: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#222222;
+}
+
+.fa-bars{
+  color:#fff;
+}
+
+.banner{
+  min-height: 520px;
+  background: #323232;
+  padding:72px;
+  background-image: url('');
+  color:#fff;
+  background:linear-gradient(180deg, rgba(29, 29, 29, 0.966), rgba(34, 0, 0, 0.884)), url('https://www.wallpaperup.com/uploads/wallpapers/2015/12/12/858715/38ab8700ce1051a9b2311504d06f8289-700.jpg');
+  background-size:cover;
+}
+.banner h3{
+  font-size: 72px;
+  font-weight: bold;
+}
+.banner p{
+  margin-top: 24px;
+  width: 50%;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.banner button{
+  background:none;
+  color:#fff;
+  margin-top: 16px;
+  border: 1px solid #fff;
+  padding:8px 24px;
+  transition: 300ms all;
+}
+.banner button:hover{
+  background: #fff;
+  color:#222222;
+}
+
+.movie-detail{
+  padding:32px;
+}
+.popular-movies-header{
+  margin: 32px 32px 0px 32px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  border-bottom: 1px solid #eee;
+}
+.movie-detail img{
+  border-radius: 8px;
+}
+.detail-info{
+  margin-left: 24px;
+}
+.detail-info .detail-header .detail-title{
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+.detail-info .detail-header .detail-tagline{
+  padding-left: 12px;
+  margin-left: 12px;
+  font-weight: 600;
+  color:#323232;
+  margin-bottom: 0rem;
+  border-left: 1px solid #ccc;
+  font-size: 13px;
+}
+.detail-info .detail-overview{
+  margin:48px 0px;
+  width: 70%;
+}
+
+.detail-info .detail-budget{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-budget p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+
+.detail-info .detail-revenue{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-revenue p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+.detail-info .detail-language{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-language p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+
+.detail-info .detail-popularity{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-popularity p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+
+.detail-info .detail-release-date{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-release-date p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+
+.detail-info .detail-runtime{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-runtime p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+
+.detail-info .detail-vote-average{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-vote-average p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+
+.detail-info .detail-vote-count{
+  padding:0px 12px 12px 12px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.detail-info .detail-vote-count p{
+  margin-bottom: 0rem;
+  margin-left: 12px;
+}
+.detail-production-countries{
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 24px;
+}
+.detail-production-countries p{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.detail-production-countries .name-list li{
+  background: #282c34;
+  width: fit-content;
+  padding:8px 16px;
+  margin-bottom: 8px;
+  list-style-type: none;
+  color: #fff;
+}
+
+
+.detail-genres p{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.detail-genres .name-list li{
+  background: #282c34;
+  width: fit-content;
+  padding:8px 16px;
+  margin-bottom: 8px;
+  list-style-type: none;
+  color: #fff;
+}
+.detail-desc-left{
+  border-right:1px solid rgb(223, 223, 223);
+  padding-right: 60px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.detail-desc-right{
+  margin-left: 60px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.about-header{
+  margin:48px 0px;
+}
+
+.movie-comp-header{
+  width: 100%;
+}
+.movie-comp-header .vote-average{
+  background: #191919;
+  padding:4px;
+  border-radius: 4px;
+  font-size: 13px;
+  width: 28px;
+  text-align: center;
+}
+.green{
+  color:rgb(31, 218, 31);
+}
+.red{
+  color:rgb(253, 33, 33);
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .movies{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .movies{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* .detail-desc{
+    flex-direction: column;
+  }
+  .detail-desc-right{
+    margin-left: 0px;
+  }
+  .detail-desc-left{
+    border-right: 0px;
+  } */
+  .detail-desc-left{
+    padding-right: 24px !important;
+  }
+  .detail-desc-right{
+    padding-left: 24px !important;
+    margin-left: 0px !important;
+  }
+}
+
+
+@media only screen and (max-width: 1260px) {
+  .movies{
+    grid-template-columns: 1fr 1fr;
+  }
+  .detail-desc{
+    flex-direction: column;
+    overflow-y: scroll;
+    min-height: 500px !important;
+    height: 500px !important;
+  }
+  
+
+.detail-desc::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #ccc;
+}
+
+.detail-desc::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+  .detail-overview{
+    margin:24px 0px !important;
+  }
+  .detail-desc-right{
+    margin-left: 0px;
+  }
+  .detail-desc-left{
+    border-right: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .movie-detail{
+    flex-direction: column;
+  }
+  .movie-detail img{
+    margin:0 auto;
+  }
+  .detail-info{
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .movies{
+    grid-template-columns: 1fr ;
+  }
+  .movie-detail img{
+    width: 300px;
+  }
+  .banner{
+    padding:24px !important;
+  }
+  .banner p{
+    width: 90%;
+  }
+}
+
+
